@@ -21,6 +21,7 @@ int main(void)
 				{
 					putchar(c);
 					putchar(i);
+					putchar(' ');
 					putchar(k);
 					putchar(j);
 
@@ -39,5 +40,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-return (0);
+	return (0);
 }
