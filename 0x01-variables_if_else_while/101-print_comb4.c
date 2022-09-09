@@ -21,7 +21,6 @@ int main(void)
 				{
 					putchar(r);
 					putchar(u);
-					putchar(' ');
 					putchar(l);
 					putchar(j);
 
