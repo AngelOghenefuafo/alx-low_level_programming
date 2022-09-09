@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point (Printing variuo types)
+ * main - Entry Point
  *
- * Return: (0)
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
 {
-char r;
-int g;
-long int t;
-long long p;
-float a;
+char a;
+int b;
+long int c;
+long long d;
+float e;
 
-printf("Size of a char: %ka byte(s)\n", (unsigned long)sizeof(r));
-printf("Size of an int: %ka byte(s)\n", (unsigned long)sizeof(g));
-printf("Size of a long int: %ka byte(s)\n", (unsigned long)sizeof(t));
-printf("Size of a long long int: %ka byte(s)\n", (unsigned long)sizeof(p));
-printf("Size of a float: %ka byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(e));
 return (0);
 }
