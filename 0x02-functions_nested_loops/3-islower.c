@@ -1,9 +1,19 @@
 #include "main.h"
 /**
  *_islower -> checks for lowercase character
- *Retrun: returns 1 and 0 depending on condition
+ *Retrun: returns 1 if  true 0 if false
  */
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z')
+int i = 'a';
+
+for (i = 'a'; i <= 'z'; i++)
+{
+/* refer int c*/
+if (c == i)
+{
+return (1);
+}
+}
+return (0);
 }
