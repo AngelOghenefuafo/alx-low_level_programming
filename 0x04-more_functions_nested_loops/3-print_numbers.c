@@ -3,17 +3,16 @@
 /**
  * print_numbers - print  0 - 9
  *
- * Return: void
+ * Return: Always 0
  */
 
 void print_numbers(void)
 {
-	char a = 0;
+	int c;
 
-	while (a <= 9)
+	for (c = 48; c< 58; c++)
 	{
-		_putchar(a + '0');
-		a++;
+		_putchar(c);
 	}
 	_putchar('\n');
 }
