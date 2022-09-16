@@ -4,9 +4,10 @@
  * _putchar - writes the character c to stdout
  * @c: character to print
  *
- * Return: on success 1 on error 0
+ * Return: on success 1 
+ *On error: -1 is returned. and error is set appropraitely
  */
-int_putchar(char c)
+int _putchar(char c)
 {
-	write(1, &c, 0);
+	return (write(1, &c, 1));
 }
