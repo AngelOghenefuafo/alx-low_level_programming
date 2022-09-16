@@ -2,19 +2,26 @@
 
 /**
 * more_numbers - prints 10 times the numbers from 0 to 14
+* Return: Always 0
  */
 void more_numbers(void)
 {
-	int x, y;
+	int x = 0;
 
-	for (x = 0; x < 10; x++)
+	while (x < 10)
 	{
-		for (y = 0; y < 15; y++)
+		int y = 0;
+
+		while (y <= 14)
 		{
-			if (y >= 10)
-				_putchar(y / 10 + 48);
-			_putchar(y % 10 + 48);
-		}
+			if (y >= 9)
+			{
+				_putchar((y / 10) + '0');
+			}
+			_putchar((y % 10) + '0');
+			y++;
+		}	
 		_putchar('\n');
+		x++;
 	}
 }	

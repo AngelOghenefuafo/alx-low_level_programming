@@ -1,7 +1,8 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * print_numbers - print  0 - 9
+ * print_numbers - checks for digit (0 - 9)
  *
  * Return: Always 0
  */
