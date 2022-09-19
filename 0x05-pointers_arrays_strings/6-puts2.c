@@ -1,32 +1,34 @@
 #include "main.h"
 /**
- * _strlen - checks string length
- *@s: string to check
- *
+ * _strlen - returns the length of string
+ * @s: string s
  * Return: length of string
  */
 int _strlen(char *s)
 {
+
 	int len = 0;
 
-	while (s[len])
+	while (*s)
+	{
+		s++;
 		len++;
+	}
 	return (len);
 }
 
 /**
- * puts2 - print out 1 character out of 2 of a string
- * @str: string str
+ * puts2 - prints one char out of 2 of a string
  *
- * Return: 0
+ * @str: string str
  */
 void puts2(char *str)
 {
-	int i;
+	int x;
+	int size = _strlen(str);
 
-	for (int i = 0; i < strlen(str); i += 2)
-	{
-		_putchar(*(str[i]);
-	}
+	for (x = 0; x < size; x += 2)
+		_putchar(*(str + x));
+
 	_putchar('\n');
 }
