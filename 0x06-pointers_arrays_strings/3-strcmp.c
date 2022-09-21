@@ -2,17 +2,19 @@
 #include <string.h>
 
 /**
- * _strcmp -> comparing characters
- * @s1: first parameter
- * @s2: second parameter
+ * _strcmp -> comparing characters.
+ * @s1: first parameter.
+ * @s2: second parameter.
  *
- * return: result
+ * return: s1[i] - s2[i].
  */
 int _strcmp(char *s1, char *s2)
 {
-	int result;
+	int i = 0;
 
-	result = strcmp(s1, s2);
-	return (result);
-
+	while (s1[i] == s2[i] && (s1[i] != '\0'))
+	{
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
