@@ -1,15 +1,26 @@
 #include <stdio.h>
 
-int square(int i)
+int mul(int a, int b)
 {
-	return i * i;
+	return a * b;
 }
 
-int add(int x, int y)
+int add(int a, int b)
 {
-	return x + y;
+	return a + b;
 }
-int sub(int i, int z)
+
+int sub(int a, int b)
 {
-	return i - z;
+	return a - b;
+}
+
+int div(int a, int b)
+{
+	return a / b;
+}
+
+int mod(int a, int b)
+{
+	return a % b;
 }
